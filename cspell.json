@@ -1,0 +1,26 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "aspida",
+    "datamodel",
+    "direnv",
+    "dmmf",
+    "esbenp",
+    "fabbrica",
+    "kimuson",
+    "nocheck",
+    "nodenv",
+    "outdir",
+    "preinstall",
+    "syncpack",
+    "typecheck",
+    "commitizen",
+    "lefthook"
+  ],
+  "ignorePaths": [
+    "pnpm-lock.yaml",
+    ".vscode/settings.json",
+    "packages/*/.eslintrc.cjs"
+  ]
+}

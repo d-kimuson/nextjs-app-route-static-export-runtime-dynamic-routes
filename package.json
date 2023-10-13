@@ -1,0 +1,49 @@
+{
+  "name": "nextjs-app-route-static-export-runtime-dynamic-routes",
+  "description": "FIXME",
+  "version": "0.0.1",
+  "author": "d-kimuson",
+  "main": "dist/index.js",
+  "packageManager": "pnpm@8.9.0",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-custom-rule"
+    }
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "fix": "pnpm /^fix:.*/",
+    "fix:prettier": "pnpm run:prettier --write",
+    "fix:turbo": "turbo run fix",
+    "fix:package-json": "syncpack format",
+    "fixAll:cspell": "node ./scripts/update_cspell_words.mjs",
+    "lint": "pnpm /^lint:.*/",
+    "lint:cspell": "cspell lint './**/*.{tsx,ts,mts,mcs,mjs,cjs,js,json,md,yml,yaml}' --gitignore --cache",
+    "lint:prettier": "pnpm run:prettier --check",
+    "lint:turbo": "turbo run lint",
+    "preinstall": "pnpm /^setup:.*/",
+    "run:lint-staged": "lint-staged --allow-empty -r",
+    "run:prettier": "prettier .",
+    "setup:check-manager": "npx -y only-allow pnpm",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cspell": "^7.3.6",
+    "cz-custom-rule": "workspace:*",
+    "lefthook": "^1.4.11",
+    "plop": "^4.0.0",
+    "prettier": "^3.0.3",
+    "syncpack": "^11.2.1",
+    "turbo": "^1.10.14"
+  },
+  "engines": {
+    "npm": "forbidden, use pnpm",
+    "yarn": "forbidden, use pnpm",
+    "pnpm": ">=8.9.0",
+    "node": ">=20"
+  },
+  "keywords": [],
+  "license": "MIT"
+}
